@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.paolabora.projects.mobilecare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.ActionBar">
+        <activity android:name=".Activities.DoctorsActivity.RespondToUpdate"></activity>
+        <activity android:name=".Activities.PaymentActivity" />
+        <activity
+            android:name=".Activities.UpdateLists"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.PatientActivity.UpdatesList"
+            android:label="@string/title_activity_update_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.DoctorsActivity.AppointmentDetails" />
+        <activity android:name=".Activities.PatientActivity.ViewScheduleSlots" />
+        <activity android:name=".Activities.DoctorsActivity.Schedule" />
+        <activity android:name=".Activities.DoctorsActivity.PatUpdateList" />
+        <activity android:name=".Activities.PatientActivity.DocUpdateList" />
+        <activity
+            android:name=".Activities.WelcomingPage"
+            android:theme="@style/AppTheme.ActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.PatientActivity.CreatePatientAccount" />
+        <activity android:name=".Activities.DoctorsActivity.SelectService" />
+        <activity android:name=".Activities.DoctorsActivity.ViewSymptoms" />
+        <activity android:name=".Activities.DoctorsActivity.SendUpdate" />
+        <activity android:name=".Activities.DoctorsActivity.ViewPatientUpdate" />
+        <activity android:name=".Activities.DoctorsActivity.SetAvailability" />
+        <activity android:name=".Activities.ResetPassword" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.PatientActivity.Registration" />
+        <activity android:name=".Activities.PatientActivity.ViewDoctorUpdate" />
+        <activity android:name=".Activities.PatientActivity.ViewMedicalHistory" />
+        <activity android:name=".Activities.PatientActivity.UploadAnUpdate" />
+        <activity android:name=".Activities.PatientActivity.UploadSymptoms" />
+        <activity android:name=".Activities.PatientActivity.BookingAppointment" />
+        <activity android:name=".Activities.PatientActivity.Services" />
+        <activity android:name=".Activities.PatientActivity.AboutThePatient" />
+        <activity android:name=".Activities.DoctorsActivity.AboutTheDoctor" />
+        <activity android:name=".Activities.DoctorsActivity.ListOfDoctors" />
+        <activity android:name=".Activities.DoctorsActivity.DoctorFragment" />
+        <activity android:name=".Activities.PatientActivity.PatientFragment" />
+        <activity android:name=".Activities.DoctorsActivity.PatientUploadedSymptoms" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

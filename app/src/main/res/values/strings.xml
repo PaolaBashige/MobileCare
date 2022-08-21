@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DigYo</string>
+
+    <string-array name="appointmentReason">
+        <item> Routine Checkup </item>
+        <item> Quick Checkup</item>
+        <item> Tests </item>
+        <item> Comprehensive Health Exam </item>
+        <item> To Get a Prescription </item>
+        <item> To Get A Sick Note </item>
+        <item> To Get Test Results </item>
+    </string-array>
+
+
+    <string name="title_activity_update_list">PatientUpdateList</string>
+    <string name="tab_text_1">Doctor Responses</string>
+    <string name="tab_text_2">Patient Updates</string>
+
+    <string name="title_activity_updates_list">UpdatesList</string>
+    <string name="tab_1_text">Patient Updates</string>
+    <string name="tab_2_text">Doctor Responses</string>
+</resources>
