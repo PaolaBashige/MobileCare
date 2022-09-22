@@ -14,13 +14,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.ActionBar">
-        <activity android:name=".Activities.DoctorsActivity.RespondToUpdate"></activity>
-        <activity android:name=".Activities.PaymentActivity" />
+        <activity
+            android:name=".Activities.DoctorsActivity.RespondToUpdate"
+            android:exported="true" />
+        <activity android:name=".Activities.PaymentActivity"
+            android:exported="true" />
         <activity
             android:name=".Activities.UpdateLists"
+            android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activities.PatientActivity.UpdatesList"
+            android:exported="true"
             android:label="@string/title_activity_update_list"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activities.DoctorsActivity.AppointmentDetails" />
@@ -30,6 +35,7 @@
         <activity android:name=".Activities.PatientActivity.DocUpdateList" />
         <activity
             android:name=".Activities.WelcomingPage"
+            android:exported="true"
             android:theme="@style/AppTheme.ActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,8 +61,10 @@
         <activity android:name=".Activities.PatientActivity.AboutThePatient" />
         <activity android:name=".Activities.DoctorsActivity.AboutTheDoctor" />
         <activity android:name=".Activities.DoctorsActivity.ListOfDoctors" />
-        <activity android:name=".Activities.DoctorsActivity.DoctorFragment" />
-        <activity android:name=".Activities.PatientActivity.PatientFragment" />
+        <activity android:name=".Activities.DoctorsActivity.DoctorFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Activities.PatientActivity.PatientFragment"
+            tools:ignore="Instantiatable" />
         <activity android:name=".Activities.DoctorsActivity.PatientUploadedSymptoms" />
 
         <meta-data
